@@ -33,7 +33,7 @@ body {
 .btn, button {
   color: #efeaea;
   text-align: center;
-  font-family: #efeaea;
+  font-family: WS, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.3rem;
@@ -41,6 +41,11 @@ body {
   padding: 1.3rem 3.2rem;
   background-color: transparent;
   border: 1px solid #efeaea;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover, button:hover {
+  background-color: white;
+  color: black;
 }
 
 header,
@@ -108,6 +113,12 @@ header nav {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+}
+
+.description h2 {
+  font-size: 9rem;
+  font-weight: 700;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

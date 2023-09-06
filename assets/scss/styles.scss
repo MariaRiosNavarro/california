@@ -11,6 +11,14 @@
   src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
 }
 
+// ------VARIABLE INFO--------------------
+//  - varible (white/black):
+//  - $w: #efeaea;
+//  - $b: rgb(29, 27, 27);
+//  - varible (fonts):
+//  - $inter: Inter, Arial, Helvetica, sans-serif;
+//  - $ws: WS, Arial, Helvetica, sans-serif;
+
 *,
 *::before,
 *::after {
@@ -55,6 +63,10 @@ body {
   }
 }
 
+button {
+  @extend .btn;
+}
+
 // ! general
 
 header,
@@ -73,10 +85,6 @@ footer {
   @include light();
   width: 100vw;
   padding: 0 10rem;
-}
-
-button {
-  @extend .btn;
 }
 
 // ! ----------header-----------------
@@ -128,13 +136,16 @@ header {
 
 // # section description
 
+.description {
+  h2 {
+    @include text(9rem, 700);
+    font-family: $inter;
+  }
+}
+
 // # section damages
 
 // # section gallery
-
-img {
-  display: none;
-}
 
 // # section message
 
