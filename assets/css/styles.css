@@ -115,10 +115,36 @@ header nav {
   justify-content: space-between;
 }
 
+.description {
+  padding-bottom: 0;
+}
 .description h2 {
   font-size: 9rem;
   font-weight: 700;
   font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.damages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-top: 0;
+}
+.damages img {
+  width: 50vw;
+}
+.damages ul li p {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.damages ul li h2 {
+  font-size: 8.6rem;
+  font-weight: 700;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 10rem; /* 125.216% */
+  letter-spacing: -0.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

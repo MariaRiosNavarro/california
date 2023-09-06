@@ -137,6 +137,7 @@ header {
 // # section description
 
 .description {
+  padding-bottom: 0;
   h2 {
     @include text(9rem, 700);
     font-family: $inter;
@@ -144,6 +145,30 @@ header {
 }
 
 // # section damages
+
+.damages {
+  @include f-row();
+  justify-content: space-between;
+  padding-right: 0;
+  padding-top: 0;
+  img {
+    width: 50vw;
+  }
+  ul {
+    li {
+      p {
+        font-family: $ws;
+        @include text(1.4rem, 400);
+      }
+      h2 {
+        @include text(8.6rem, 700);
+        font-family: $inter;
+        line-height: 10rem; /* 125.216% */
+        letter-spacing: -0.2rem;
+      }
+    }
+  }
+}
 
 // # section gallery
 
