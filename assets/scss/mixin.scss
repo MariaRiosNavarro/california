@@ -1,11 +1,26 @@
-// @mixin my-style {
-//     color: gold;
-//   }
+@mixin dark {
+  background-color: black;
+  color: white;
+}
 
-//   // so können individualisieren
-//   @mixin text-style($fz, $ff, $ls, $fw) {
-//     font-size: $fz;
-//     font-family: $ff;
-//     letter-spacing: $ls;
-//     font-weight: $fw;
-//   }
+@mixin light {
+  background-color: white;
+  color: black;
+}
+
+@mixin f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin f-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin big-text($fz, $ff, $ls, $fw) {
+  font-size: $fz;
+  font-family: $ff;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}

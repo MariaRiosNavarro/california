@@ -21,9 +21,28 @@ a {
   text-decoration: none;
 }
 
+body {
+  @include f-column-c();
+  width: 100vw;
+  margin: 0 auto;
+}
+
 // ! ----------header-----------------
 
 header {
-  background-color: $b;
-  color: $w;
+  @include dark();
+  @include f-column();
+  //   .header-text {
+  //   }
+
+  nav {
+    @include f-row();
+    justify-content: space-between;
+  }
+}
+
+// ! -----------main------------------
+
+main {
+  display: flex;
 }
