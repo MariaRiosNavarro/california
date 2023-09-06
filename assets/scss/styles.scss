@@ -87,7 +87,7 @@ footer {
 .poppy-bear {
   @include light();
   width: 100%;
-  padding: 0 10rem;
+  padding: 10rem;
 }
 
 // ! ----------header-----------------
@@ -216,6 +216,7 @@ header {
       bottom: 28%;
       left: 0;
       width: 20%;
+      z-index: 0;
     }
     &.img-seven {
       bottom: -5%;
@@ -255,9 +256,44 @@ header {
 
 .bears {
   overflow: hidden;
-  width: 100vw;
-  height: 100%;
-  z-index: 3;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  padding: 10rem;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  @include f-row();
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  .big-img {
+    width: 55%;
+    object-fit: cover;
+  }
+  .sm-img {
+    width: 30%;
+    object-fit: cover;
+    z-index: 10;
+    position: absolute;
+    .sm-img {
+      right: 70%;
+    }
+  }
+}
+
+.poppy-bear {
+  .img-wrapper {
+    .sm-img {
+      right: 70%;
+    }
+  }
+}
+
+.animation-circle {
+  width: 25%;
 }
 
 // # section message
