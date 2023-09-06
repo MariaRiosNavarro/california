@@ -40,17 +40,18 @@ body {
 .btn {
   color: $w;
   text-align: center;
-  font-family: $w;
+  font-family: $ws;
   @include text(2rem, 400);
   line-height: 2.3rem;
   letter-spacing: -0.04rem;
   padding: 1.3rem 3.2rem;
   background-color: transparent;
   border: 1px solid $w;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
-    background-color: $w;
-    color: $b;
+    background-color: white;
+    color: black;
   }
 }
 
@@ -130,6 +131,10 @@ header {
 // # section damages
 
 // # section gallery
+
+img {
+  display: none;
+}
 
 // # section message
 
