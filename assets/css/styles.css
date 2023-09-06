@@ -28,6 +28,7 @@ a {
 
 body {
   width: 100vw;
+  max-width: 1440px;
 }
 
 .btn, button {
@@ -145,6 +146,64 @@ header nav {
   font-family: Inter, Arial, Helvetica, sans-serif;
   line-height: 10rem; /* 125.216% */
   letter-spacing: -0.2rem;
+}
+
+.gallery {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.gallery .img-wrapper {
+  position: relative;
+  background-color: red;
+  width: 100vw;
+  height: 50vh;
+  overflow: visible;
+}
+.gallery .img-wrapper img {
+  width: 30vw;
+  position: absolute;
+}
+.gallery .img-wrapper img .img-one {
+  right: 0;
+  z-index: 99;
+}
+.gallery .img-wrapper img .img-two {
+  right: 13rem;
+  top: 25rem;
+}
+.gallery .img-wrapper img .img-three {
+  bottom: 0;
+  left: 25rem;
+}
+.gallery h2 {
+  text-align: left;
+  width: 30vw;
+  color: rgb(29, 27, 27);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 8.3rem;
+  font-weight: 700;
+  line-height: 8.3rem;
+  letter-spacing: -1.238px;
+  margin: 0 auto;
+  padding-top: 25vh;
+  padding-bottom: 0.5rem;
+}
+.gallery p {
+  color: rgb(29, 27, 27);
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.408px;
+  width: 30vw;
+  margin: 0 auto;
+}
+.gallery p:first-of-type {
+  padding-bottom: 50vh;
+}
+.gallery p:nth-of-type(2) {
+  padding-bottom: 25vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

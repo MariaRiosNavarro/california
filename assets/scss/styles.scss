@@ -41,6 +41,7 @@ a {
 
 body {
   width: 100vw;
+  max-width: 1440px;
 }
 
 // ! general classes
@@ -171,6 +172,69 @@ header {
 }
 
 // # section gallery
+
+.gallery {
+  padding: 0;
+  @include f-column();
+  .img-wrapper {
+    position: relative;
+    background-color: red;
+    width: 100vw;
+    height: 50vh;
+    overflow: visible;
+    img {
+      width: 30vw;
+      position: absolute;
+      .img-one {
+        right: 0;
+        z-index: 99;
+      }
+      .img-two {
+        right: 13rem;
+        top: 25rem;
+      }
+      .img-three {
+        bottom: 0;
+        left: 25rem;
+      }
+      .img-four {
+      }
+      .img-five {
+      }
+      .img-six {
+      }
+      .img-seven {
+      }
+    }
+  }
+  h2 {
+    text-align: left;
+    width: 30vw;
+    color: $b;
+    font-family: $inter;
+    @include text(8.3rem, 700);
+    line-height: 8.3rem;
+    letter-spacing: -1.238px;
+    margin: 0 auto;
+    padding-top: 25vh;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    color: $b;
+    font-family: $ws;
+    @include text(1.5rem, 400);
+    line-height: 3rem;
+    letter-spacing: -0.408px;
+    width: 30vw;
+    margin: 0 auto;
+    &:first-of-type {
+      padding-bottom: 50vh;
+    }
+    &:nth-of-type(2) {
+      padding-bottom: 25vh;
+    }
+  }
+}
 
 // # section message
 
