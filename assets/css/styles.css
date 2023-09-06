@@ -135,6 +135,9 @@ header nav {
 .damages img {
   width: 50vw;
 }
+.damages ul li {
+  margin-bottom: 2rem;
+}
 .damages ul li p {
   font-family: WS, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -149,32 +152,52 @@ header nav {
 }
 
 .gallery {
+  margin: auto;
+  height: 157vh;
   padding: 0;
   display: flex;
   flex-direction: column;
-}
-.gallery .img-wrapper {
   position: relative;
-  background-color: red;
-  width: 100vw;
-  height: 50vh;
   overflow: visible;
 }
-.gallery .img-wrapper img {
-  width: 30vw;
+.gallery img {
   position: absolute;
 }
-.gallery .img-wrapper img .img-one {
+.gallery img.img-one {
+  right: 8vw;
+  top: -5vh;
+  width: 28vw;
+}
+.gallery img.img-two {
+  left: 5vw;
+  top: 25vh;
+  width: 22vw;
+}
+.gallery img.img-three {
+  top: 45vh;
   right: 0;
-  z-index: 99;
+  width: 22vw;
 }
-.gallery .img-wrapper img .img-two {
-  right: 13rem;
-  top: 25rem;
+.gallery img.img-four {
+  left: 15vw;
+  top: 65vh;
+  width: 28vw;
 }
-.gallery .img-wrapper img .img-three {
-  bottom: 0;
-  left: 25rem;
+.gallery img.img-five {
+  bottom: 53vh;
+  right: 10vw;
+  width: 28vw;
+}
+.gallery img.img-six {
+  bottom: 28vh;
+  left: 0;
+  width: 22vw;
+}
+.gallery img.img-seven {
+  bottom: -5rem;
+  right: 30rem;
+  z-index: 0;
+  width: 30vw;
 }
 .gallery h2 {
   text-align: left;
@@ -186,8 +209,9 @@ header nav {
   line-height: 8.3rem;
   letter-spacing: -1.238px;
   margin: 0 auto;
-  padding-top: 25vh;
+  padding-top: 35vh;
   padding-bottom: 0.5rem;
+  z-index: 99;
 }
 .gallery p {
   color: rgb(29, 27, 27);
@@ -200,10 +224,14 @@ header nav {
   margin: 0 auto;
 }
 .gallery p:first-of-type {
-  padding-bottom: 50vh;
+  padding-bottom: 60vh;
 }
-.gallery p:nth-of-type(2) {
-  padding-bottom: 25vh;
+
+.bears {
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=styles.css.map */
