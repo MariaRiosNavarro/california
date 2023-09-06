@@ -314,10 +314,11 @@ header nav {
 }
 .same-header .same-wrapper .same-text p {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.7rem;
+  font-size: 28px;
   font-weight: 700;
   line-height: 32.917px;
   letter-spacing: -0.408px;
+  width: 5.3rem;
 }
 .same-header .same-wrapper .same-text h3 {
   font-family: WS, Arial, Helvetica, sans-serif;

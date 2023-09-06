@@ -337,9 +337,10 @@ header {
     .same-text {
       p {
         font-family: $inter;
-        @include text(2.7rem, 700);
+        @include text(28px, 700);
         line-height: 32.917px;
         letter-spacing: -0.408px;
+        width: 5.3rem;
       }
       h3 {
         font-family: $ws;
