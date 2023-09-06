@@ -47,6 +47,11 @@ body {
   padding: 1.3rem 3.2rem;
   background-color: transparent;
   border: 1px solid $w;
+
+  &:hover {
+    background-color: $w;
+    color: $b;
+  }
 }
 
 // ! general
