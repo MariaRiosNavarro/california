@@ -79,14 +79,14 @@ header,
 .message,
 footer {
   @include dark();
-  width: 100vw;
+  width: 100%;
   padding: 10rem;
 }
 
 .gallery,
 .poppy-bear {
   @include light();
-  width: 100vw;
+  width: 100%;
   padding: 0 10rem;
 }
 
@@ -155,7 +155,8 @@ header {
   padding-right: 0;
   padding-top: 0;
   img {
-    width: 50vw;
+    width: 50%;
+    object-fit: contain;
   }
   ul {
     li {
@@ -178,60 +179,61 @@ header {
 
 .gallery {
   margin: auto;
-  height: 157vh;
+  height: 2000px;
   padding: 0;
   @include f-column();
+  justify-content: space-between;
   position: relative;
   overflow: visible;
   img {
     position: absolute;
     &.img-one {
-      right: 8vw;
-      top: -5vh;
-      width: 28vw;
+      right: 8%;
+      top: -5%;
+      width: 25%;
     }
     &.img-two {
-      left: 5vw;
-      top: 25vh;
-      width: 22vw;
+      left: 5%;
+      top: 15%;
+      width: 20%;
     }
     &.img-three {
-      top: 45vh;
+      top: 35%;
       right: 0;
-      width: 22vw;
+      width: 20%;
     }
     &.img-four {
-      left: 15vw;
-      top: 65vh;
-      width: 28vw;
+      left: 15%;
+      bottom: 45%;
+      width: 25%;
     }
     &.img-five {
-      bottom: 53vh;
-      right: 10vw;
-      width: 28vw;
+      bottom: 35%;
+      right: 10%;
+      width: 25%;
     }
     &.img-six {
-      bottom: 28vh;
+      bottom: 28%;
       left: 0;
-      width: 22vw;
+      width: 20%;
     }
     &.img-seven {
-      bottom: -5rem;
-      right: 30rem;
+      bottom: -5%;
+      right: 15%;
       z-index: 0;
-      width: 30vw;
+      width: 25%;
     }
   }
   h2 {
     text-align: left;
-    width: 30vw;
+    width: 31%;
     color: $b;
     font-family: $inter;
     @include text(8.3rem, 700);
     line-height: 8.3rem;
     letter-spacing: -1.238px;
-    margin: 0 auto;
-    padding-top: 35vh;
+    margin: 15% auto 0 auto;
+    padding-top: 15%;
     padding-bottom: 0.5rem;
     z-index: 99;
   }
@@ -241,10 +243,10 @@ header {
     @include text(1.5rem, 400);
     line-height: 3rem;
     letter-spacing: -0.408px;
-    width: 30vw;
+    width: 31%;
     margin: 0 auto;
     &:first-of-type {
-      padding-bottom: 60vh;
+      padding-bottom: 25%;
     }
   }
 }
