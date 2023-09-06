@@ -266,10 +266,8 @@ header {
   position: relative;
   width: 100%;
   @include f-row();
-  justify-content: center;
-  align-items: center;
   .big-img {
-    width: 55%;
+    width: 60%;
     object-fit: cover;
   }
   .sm-img {
@@ -277,16 +275,23 @@ header {
     object-fit: cover;
     z-index: 10;
     position: absolute;
+  }
+}
+
+.golden-bear {
+  .img-wrapper {
+    justify-content: flex-start;
     .sm-img {
-      left: 70%;
+      right: 15%;
     }
   }
 }
 
 .poppy-bear {
   .img-wrapper {
+    justify-content: flex-end;
     .sm-img {
-      right: 70%;
+      left: 15%;
     }
   }
 }

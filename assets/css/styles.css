@@ -245,11 +245,9 @@ header nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-items: center;
 }
 .img-wrapper .big-img {
-  width: 55%;
+  width: 60%;
   object-fit: cover;
 }
 .img-wrapper .sm-img {
@@ -258,12 +256,19 @@ header nav {
   z-index: 10;
   position: absolute;
 }
-.img-wrapper .sm-img .sm-img {
-  left: 70%;
+
+.golden-bear .img-wrapper {
+  justify-content: flex-start;
+}
+.golden-bear .img-wrapper .sm-img {
+  right: 15%;
 }
 
+.poppy-bear .img-wrapper {
+  justify-content: flex-end;
+}
 .poppy-bear .img-wrapper .sm-img {
-  right: 70%;
+  left: 15%;
 }
 
 .animation-circle {
