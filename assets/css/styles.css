@@ -233,7 +233,7 @@ header nav {
 }
 
 .bears {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   z-index: 10;
   margin: 0;
@@ -247,7 +247,7 @@ header nav {
   align-items: center;
 }
 .img-wrapper .big-img {
-  width: 60%;
+  width: 70%;
   object-fit: cover;
 }
 .img-wrapper .sm-img {
@@ -257,22 +257,74 @@ header nav {
   position: absolute;
 }
 
+.golden-bear {
+  z-index: 20;
+}
 .golden-bear .img-wrapper {
   justify-content: flex-start;
 }
 .golden-bear .img-wrapper .sm-img {
-  right: 15%;
+  right: 5%;
 }
 
 .poppy-bear .img-wrapper {
   justify-content: flex-end;
 }
 .poppy-bear .img-wrapper .sm-img {
-  left: 15%;
+  left: 5%;
 }
 
-.animation-circle {
+.poppy-bear {
+  z-index: 10;
+  position: relative;
+}
+.poppy-bear .animation-circle {
+  position: absolute;
+  right: -8%;
+  top: -10%;
   width: 25%;
+  z-index: 0;
+}
+
+.golden-bear,
+.poppy-bear {
+  padding-top: 16rem;
+  height: 1212px;
+}
+
+.same-header {
+  display: flex;
+  align-items: center;
+}
+.same-header .same-wrapper {
+  padding-bottom: 20%;
+}
+.same-header .same-wrapper h3 {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.408px;
+}
+.same-header .same-wrapper h2 {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 8.5rem;
+  font-weight: 700;
+  line-height: 82.292px;
+}
+.same-header .same-wrapper .same-text p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 32.917px;
+  letter-spacing: -0.408px;
+}
+.same-header .same-wrapper .same-text h3 {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.408px;
 }
 
 /*# sourceMappingURL=styles.css.map */
