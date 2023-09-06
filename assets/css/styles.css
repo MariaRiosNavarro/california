@@ -29,6 +29,7 @@ a {
 body {
   width: 100vw;
   max-width: 1440px;
+  margin: auto;
 }
 
 .btn, button {
