@@ -1,12 +1,26 @@
 @import "./variables.scss";
 @import "./mixin.scss";
 
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+  font-family: WS;
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 ul {
@@ -21,19 +35,80 @@ body {
   width: 100vw;
 }
 
+// ! general classes
+
+.btn {
+  color: $w;
+  text-align: center;
+  font-family: $w;
+  @include text(2rem, 400);
+  line-height: 2.3rem;
+  letter-spacing: -0.04rem;
+  padding: 1.3rem 3.2rem;
+  background-color: transparent;
+  border: 1px solid $w;
+}
+
+// ! general
+
+header,
+.description,
+.damages,
+.golden-bear,
+.message,
+footer {
+  @include dark();
+  width: 100vw;
+  padding: 10rem;
+}
+
+.gallery,
+.poppy-bear {
+  @include light();
+  width: 100vw;
+  padding: 0 10rem;
+}
+
+button {
+  @extend .btn;
+}
+
 // ! ----------header-----------------
 
 header {
-  @include dark();
   @include f-column();
   justify-content: center;
   align-items: center;
-  width: 100vw;
   .header-text {
     height: 50vh;
     @include f-column();
     justify-content: center;
     align-items: center;
+    h3 {
+      font-family: $ws;
+      @include text(1.2rem, 400);
+    }
+    h1 {
+      font-family: $inter;
+      @include text(6.2rem, 700);
+    }
+    h2 {
+      text-align: center;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      @include text(6.2rem, 700);
+      line-height: 51.2px;
+      color: $b;
+      text-shadow: 1px 1px 0 $w, -1px -1px 0 $w, 1px -1px 0 $w, -1px 1px 0 $w,
+        1px 1px 0 $w;
+    }
+
+    p {
+      text-align: center;
+      font-family: $ws;
+      @include text(1.2rem, 400);
+      letter-spacing: -0.5px;
+      padding-top: 1.2rem;
+    }
   }
 
   nav {

@@ -1,9 +1,21 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: WS;
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 ul {
@@ -18,14 +30,44 @@ body {
   width: 100vw;
 }
 
+.btn, button {
+  color: #efeaea;
+  text-align: center;
+  font-family: #efeaea;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  letter-spacing: -0.04rem;
+  padding: 1.3rem 3.2rem;
+  background-color: transparent;
+  border: 1px solid #efeaea;
+}
+
+header,
+.description,
+.damages,
+.golden-bear,
+.message,
+footer {
+  background-color: rgb(29, 27, 27);
+  color: #efeaea;
+  width: 100vw;
+  padding: 10rem;
+}
+
+.gallery,
+.poppy-bear {
+  background-color: #efeaea;
+  color: rgb(29, 27, 27);
+  width: 100vw;
+  padding: 0 10rem;
+}
+
 header {
-  background-color: black;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 header .header-text {
   height: 50vh;
@@ -33,6 +75,33 @@ header .header-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+header .header-text h3 {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+header .header-text h1 {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+header .header-text h2 {
+  text-align: center;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 51.2px;
+  color: rgb(29, 27, 27);
+  text-shadow: 1px 1px 0 #efeaea, -1px -1px 0 #efeaea, 1px -1px 0 #efeaea, -1px 1px 0 #efeaea, 1px 1px 0 #efeaea;
+}
+header .header-text p {
+  text-align: center;
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding-top: 1.2rem;
 }
 header nav {
   display: flex;

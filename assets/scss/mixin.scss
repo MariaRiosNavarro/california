@@ -1,11 +1,11 @@
 @mixin dark {
-  background-color: black;
-  color: white;
+  background-color: rgb(29, 27, 27);
+  color: #efeaea;
 }
 
 @mixin light {
-  background-color: white;
-  color: black;
+  background-color: #efeaea;
+  color: rgb(29, 27, 27);
 }
 
 @mixin f-column {
@@ -18,9 +18,7 @@
   align-items: center;
 }
 
-@mixin big-text($fz, $ff, $ls, $fw) {
+@mixin text($fz, $fw) {
   font-size: $fz;
-  font-family: $ff;
-  letter-spacing: $ls;
   font-weight: $fw;
 }
