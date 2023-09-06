@@ -40,9 +40,10 @@ a {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
+  background-color: $b;
 }
 
 // ! general classes
