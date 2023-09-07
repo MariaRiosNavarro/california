@@ -97,12 +97,50 @@
     background-color: $w;
     width: 100vw;
   }
+  header,
+  .description,
+  .damages,
+  .golden-bear,
+  footer {
+    width: 100vw;
+    padding: 2rem;
+  }
+
+  .gallery,
+  .poppy-bear {
+    width: 100vw;
+    padding: 2rem;
+  }
+
+  //   ! header
+  header {
+    .header-text {
+      height: 30vh;
+      h3 {
+        @include text(1.2rem, 400);
+        padding-bottom: 1rem;
+      }
+      h1 {
+        @include text(3rem, 700);
+      }
+      h2 {
+        @include text(3rem, 700);
+        text-shadow: 1px 1px 0 $w, -1px -1px 0 $w, 1px -1px 0 $w, -1px 1px 0 $w,
+          1px 1px 0 $w;
+      }
+
+      p {
+        padding-top: 1rem;
+        @include text(1.2rem, 400);
+      }
+    }
+  }
 
   //!description
 
   .description {
     h2 {
-      @include text(7rem, 700);
+      @include text(3rem, 700);
     }
   }
 
@@ -110,7 +148,7 @@
 
   .damages {
     img {
-      width: 40%;
+      width: 30%;
       object-fit: contain;
     }
     .damages-list {
@@ -123,57 +161,176 @@
     }
   }
 
-  // !animations
+  // ! gallery
 
-  .animation-circle {
-    top: 0;
-    right: 35%;
-  }
-
-  .animation-stripe {
-    transform: rotate(0);
-    top: -10rem;
-    left: -10rem;
-    width: 100vw;
-  }
-
-  .triangle {
-    display: none;
+  .gallery {
+    z-index: 0;
+    margin: 2rem auto;
+    height: 1000px;
+    padding: 0;
+    @include f-column();
+    justify-content: space-between;
+    position: relative;
+    // overflow: visible;
+    img {
+      position: absolute;
+      width: 30%;
+      &.img-one {
+        right: 0;
+        top: 0;
+        width: 30%;
+      }
+      &.img-two {
+        left: 0;
+        top: 0;
+        width: 30%;
+      }
+      &.img-three {
+        top: 45%;
+        right: 0;
+        width: 30%;
+      }
+      &.img-four {
+        left: 35%;
+        top: 45%;
+        width: 30%;
+      }
+      &.img-five {
+        top: 45%;
+        left: 0;
+        width: 30%;
+      }
+      &.img-six {
+        bottom: 0;
+        left: 0;
+        width: 30%;
+      }
+      &.img-seven {
+        bottom: 0;
+        right: 0;
+        width: 30%;
+      }
+    }
+    h2 {
+      text-align: left;
+      width: 31%;
+      color: $b;
+      font-family: $inter;
+      @include text(3rem, 700);
+      line-height: 3rem;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      color: $b;
+      font-family: $ws;
+      @include text(1.5rem, 400);
+      line-height: 1.5rem;
+      &:first-of-type {
+        padding-bottom: 25%;
+      }
+    }
   }
 
   //   !bears
 
-  .same-wrapper {
-    h3 {
-      @include text(1.5rem, 400);
+  .same-header {
+    @include f-column();
+    text-align: center;
+    .same-wrapper {
+      width: 100%;
+      margin: 0 2rem;
+      h3 {
+        @include text(1rem, 400);
+      }
+      h2 {
+        @include text(2rem, 700);
+        line-height: 3rem;
+      }
     }
-    h2 {
-      @include text(4rem, 700);
-    }
-  }
 
-  .same-text {
-    p {
-      @include text(2rem, 700);
-    }
-    h3 {
-      @include text(1.5rem, 400);
+    .same-text {
+      margin: 0 2rem;
+      width: 100%;
+      p {
+        @include text(2rem, 700);
+      }
+      h3 {
+        @include text(1rem, 400);
+      }
     }
   }
 
   .golden-bear {
     .img-wrapper {
-      padding-top: 16rem;
+      padding-top: 3rem;
       top: 0;
+    }
+  }
+
+  .poppy-bear {
+    .img-wrapper {
+      padding-top: 3rem;
+      top: 0;
+      margin-top: 0;
     }
   }
 
   // ! footer message
 
+  .footer {
+    padding-bottom: 10rem;
+  }
+
   .footer-message {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
     p {
       width: 100%;
-      padding-bottom: 20rem;
+      padding-bottom: 3rem;
+      @include text(2rem, 700);
+      line-height: 3rem;
     }
+  }
+
+  .footer-wrapper {
+    margin: 5rem 0;
+    align-items: center;
+    .f-logos {
+      padding-right: 0;
+    }
+  }
+
+  // !animations
+
+  .animation-wrapper {
+    height: 8rem;
+  }
+
+  .animation-circle {
+    top: 0;
+    right: 30%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .animation-stripe {
+    transform: rotate(0);
+    top: -2rem;
+    left: -2rem;
+    width: 100vw;
+    div {
+      @include text(3rem, 700);
+      span {
+        overflow: hidden;
+        z-index: 0;
+        color: $w;
+        text-shadow: 1px 1px 0 $b, -1px -1px 0 $b, 1px -1px 0 $b, -1px 1px 0 $b,
+          1px 1px 0 $b;
+      }
+    }
+  }
+
+  .triangle {
+    display: none;
   }
 }
