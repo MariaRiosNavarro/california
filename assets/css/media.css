@@ -58,6 +58,22 @@
 @media screen and (max-width: 767px) {
   body {
     background-color: #efeaea;
+    width: 100vw;
+  }
+  .description h2 {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+  .damages img {
+    width: 40%;
+    object-fit: contain;
+  }
+  .damages .damages-list {
+    padding-top: 5rem;
+  }
+  .damages .damages-list li h2 {
+    font-size: 5rem;
+    font-weight: 700;
   }
   .animation-circle {
     top: 0;
@@ -72,9 +88,29 @@
   .triangle {
     display: none;
   }
+  .same-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .same-wrapper h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .same-text p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .same-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
   .golden-bear .img-wrapper {
     padding-top: 16rem;
     top: 0;
+  }
+  .footer-message p {
+    width: 100%;
+    padding-bottom: 20rem;
   }
 }
 
