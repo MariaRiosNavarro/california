@@ -282,7 +282,7 @@ header {
     z-index: 5;
   }
   .sm-img {
-    width: 30%;
+    width: 35%;
     object-fit: cover;
     z-index: 10;
     position: absolute;
@@ -300,7 +300,8 @@ header {
     justify-content: flex-start;
 
     .sm-img {
-      right: 5%;
+      bottom: 15%;
+      right: 2%;
     }
   }
 }
@@ -318,7 +319,7 @@ header {
     justify-content: flex-end;
 
     .sm-img {
-      left: 5%;
+      left: 2%;
     }
   }
 }
@@ -339,8 +340,8 @@ header {
   position: absolute;
   right: -8%;
   top: -35%;
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
   object-fit: contain;
   animation: rotateAnimation 5s infinite linear;
 }

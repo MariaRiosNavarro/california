@@ -256,7 +256,7 @@ header nav {
   z-index: 5;
 }
 .img-wrapper .sm-img {
-  width: 30%;
+  width: 35%;
   object-fit: cover;
   z-index: 10;
   position: absolute;
@@ -271,7 +271,8 @@ header nav {
   justify-content: flex-start;
 }
 .golden-bear .img-wrapper .sm-img {
-  right: 5%;
+  bottom: 15%;
+  right: 2%;
 }
 
 .poppy-bear {
@@ -285,7 +286,7 @@ header nav {
   justify-content: flex-end;
 }
 .poppy-bear .img-wrapper .sm-img {
-  left: 5%;
+  left: 2%;
 }
 
 .animation-wrapper {
@@ -302,8 +303,8 @@ header nav {
   position: absolute;
   right: -8%;
   top: -35%;
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
   object-fit: contain;
   animation: rotateAnimation 5s infinite linear;
 }
