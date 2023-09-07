@@ -201,7 +201,7 @@ header nav {
 .gallery img.img-seven {
   bottom: -5%;
   right: 15%;
-  z-index: 0;
+  z-index: 1;
   width: 25%;
 }
 .gallery h2 {
@@ -233,7 +233,6 @@ header nav {
 }
 
 .bears {
-  overflow: visible;
   width: 100%;
   margin: 0;
   padding: 10rem;
@@ -250,6 +249,7 @@ header nav {
   width: 100%;
   display: flex;
   align-items: center;
+  padding-top: 30rem;
 }
 .img-wrapper .big-img {
   width: 70%;
@@ -299,7 +299,7 @@ header nav {
   align-items: center;
 }
 .same-header .same-wrapper {
-  padding-bottom: 20%;
+  width: 50%;
 }
 .same-header .same-wrapper h3 {
   font-family: WS, Arial, Helvetica, sans-serif;
@@ -307,6 +307,7 @@ header nav {
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: -0.408px;
+  padding-bottom: 1.2rem;
 }
 .same-header .same-wrapper h2 {
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -314,15 +315,20 @@ header nav {
   font-weight: 700;
   line-height: 82.292px;
 }
-.same-header .same-wrapper .same-text p {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 32.917px;
-  letter-spacing: -0.408px;
-  width: 5.3rem;
+
+.same-text {
+  width: 50%;
+  padding-top: 3rem;
 }
-.same-header .same-wrapper .same-text h3 {
+.same-text p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.408px;
+  margin-bottom: 3rem;
+}
+.same-text h3 {
   font-family: WS, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
