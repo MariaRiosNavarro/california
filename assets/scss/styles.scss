@@ -43,7 +43,8 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: $w;
+  background-color: $b;
+
 }
 
 // ! general classes
@@ -110,7 +111,7 @@ header {
     }
     h2 {
       text-align: center;
-      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-family: $inter;
       @include text(6.2rem, 700);
       line-height: 51.2px;
       color: $b;
@@ -350,6 +351,7 @@ header {
 
 .same-header {
   @include f-row();
+  gap: 3rem;
   .same-wrapper {
     width: 50%;
 
@@ -511,3 +513,5 @@ header {
     transform: translateX(0%);
   }
 }
+
+@import "./media.scss";

@@ -31,6 +31,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-color: #efeaea;
+
 }
 
 .btn, button {
@@ -312,6 +313,7 @@ header nav {
 .same-header {
   display: flex;
   align-items: center;
+  gap: 3rem;
 }
 .same-header .same-wrapper {
   width: 50%;
@@ -460,6 +462,276 @@ header nav {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+  body {
+    background-color: #efeaea;
+  }
+  .description h2 {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+  .damages img {
+    width: 40%;
+    object-fit: contain;
+  }
+  .damages .damages-list {
+    padding-top: 5rem;
+  }
+  .damages .damages-list li h2 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .animation-circle {
+    top: 0;
+    right: 35%;
+  }
+  .animation-stripe {
+    transform: rotate(0);
+    top: -10rem;
+    left: -10rem;
+    width: 100vw;
+  }
+  .triangle {
+    display: none;
+  }
+  .same-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .same-wrapper h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .same-text p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .same-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .golden-bear .img-wrapper {
+    padding-top: 16rem;
+    top: 0;
+  }
+  .footer-message p {
+    width: 100%;
+    padding-bottom: 20rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #efeaea;
+    width: 100vw;
+  }
+  header,
+  .description,
+  .damages,
+  .golden-bear,
+  footer {
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gallery,
+  .poppy-bear {
+    width: 100vw;
+    padding: 2rem;
+  }
+  header .header-text {
+    height: 40vh;
+  }
+  header .header-text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  header .header-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  header .header-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #efeaea, -1px -1px 0 #efeaea, 1px -1px 0 #efeaea, -1px 1px 0 #efeaea, 1px 1px 0 #efeaea;
+  }
+  header .header-text p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .description h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .damages img {
+    width: 30%;
+    object-fit: contain;
+  }
+  .damages .damages-list {
+    padding-top: 5rem;
+  }
+  .damages .damages-list li h2 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .gallery {
+    z-index: 0;
+    margin: 2rem auto;
+    height: 1000px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .gallery img {
+    position: absolute;
+    width: 30%;
+  }
+  .gallery img.img-one {
+    right: 0;
+    top: 0;
+    width: 30%;
+  }
+  .gallery img.img-two {
+    left: 0;
+    top: 0;
+    width: 30%;
+  }
+  .gallery img.img-three {
+    top: 45%;
+    right: 0;
+    width: 30%;
+  }
+  .gallery img.img-four {
+    left: 35%;
+    top: 45%;
+    width: 30%;
+  }
+  .gallery img.img-five {
+    top: 45%;
+    left: 0;
+    width: 30%;
+  }
+  .gallery img.img-six {
+    bottom: 0;
+    left: 0;
+    width: 30%;
+  }
+  .gallery img.img-seven {
+    bottom: 0;
+    right: 0;
+    width: 30%;
+  }
+  .gallery h2 {
+    text-align: left;
+    width: 31%;
+    color: rgb(29, 27, 27);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  .gallery p {
+    color: rgb(29, 27, 27);
+    font-family: WS, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .gallery p:first-of-type {
+    padding-bottom: 25%;
+  }
+  .same-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .same-header .same-wrapper {
+    width: 100%;
+    margin: 0 2rem;
+  }
+  .same-header .same-wrapper h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .same-header .same-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  .same-header .same-text {
+    margin: 0 2rem;
+    width: 100%;
+  }
+  .same-header .same-text p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .same-header .same-text h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .golden-bear .img-wrapper {
+    padding-top: 3rem;
+    top: 0;
+  }
+  .poppy-bear .img-wrapper {
+    padding-top: 3rem;
+    top: 0;
+    margin-top: 0;
+  }
+  .footer {
+    padding-bottom: 10rem;
+  }
+  .footer-message {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .footer-message p {
+    width: 100%;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  .footer-wrapper {
+    margin: 5rem 0;
+    align-items: center;
+  }
+  .footer-wrapper .f-logos {
+    padding-right: 0;
+  }
+  .animation-wrapper {
+    height: 8rem;
+  }
+  .animation-circle {
+    top: 0;
+    right: 30%;
+    width: 150px;
+    height: 150px;
+  }
+  .animation-stripe {
+    transform: rotate(0);
+    top: -2rem;
+    left: -2rem;
+    width: 100vw;
+  }
+  .animation-stripe div {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .animation-stripe div span {
+    overflow: hidden;
+    z-index: 0;
+    color: #efeaea;
+    text-shadow: 1px 1px 0 rgb(29, 27, 27), -1px -1px 0 rgb(29, 27, 27), 1px -1px 0 rgb(29, 27, 27), -1px 1px 0 rgb(29, 27, 27), 1px 1px 0 rgb(29, 27, 27);
+  }
+  .triangle {
+    display: none;
   }
 }
 
