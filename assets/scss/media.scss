@@ -1,0 +1,40 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  // !general
+
+  body {
+    background-color: $w;
+  }
+
+  // !animations
+
+  .animation-circle {
+    top: 0;
+    right: 35%;
+  }
+
+  .animation-stripe {
+    transform: rotate(0);
+    top: -10rem;
+    left: -10rem;
+    width: 100vw;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  //   !bear
+
+  .golden-bear {
+    .img-wrapper {
+      padding-top: 16rem;
+      top: 0;
+    }
+  }
+}
+
+@media screen {
+}
