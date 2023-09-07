@@ -43,7 +43,6 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: $b;
 }
 
 // ! general classes
@@ -178,13 +177,14 @@ header {
 // # section gallery
 
 .gallery {
+  z-index: 0;
   margin: auto;
   height: 2000px;
   padding: 0;
   @include f-column();
   justify-content: space-between;
   position: relative;
-  overflow: visible;
+  // overflow: visible;
   img {
     position: absolute;
     &.img-one {
@@ -255,18 +255,17 @@ header {
 // # section bears
 
 .bears {
-  // overflow: visible;
   width: 100%;
   margin: 0;
-  padding: 10rem;
+  z-index: 30;
 }
 
 // 2 bears
 
 .golden-bear,
 .poppy-bear {
-  padding-top: 16rem;
-  height: 1212px;
+  padding: 20rem 10rem 0 10rem;
+  margin: 0;
 }
 
 // img position
@@ -275,11 +274,12 @@ header {
   position: relative;
   width: 100%;
   @include f-row();
-  padding-top: 30rem;
+  padding-top: 16rem;
 
   .big-img {
     width: 70%;
     object-fit: cover;
+    z-index: 5;
   }
   .sm-img {
     width: 30%;
@@ -295,6 +295,8 @@ header {
   z-index: 20;
 
   .img-wrapper {
+    padding-top: 0;
+    top: 16rem;
     justify-content: flex-start;
 
     .sm-img {
@@ -306,6 +308,9 @@ header {
 // .poppy-bear
 
 .poppy-bear {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 5rem;
   z-index: 10;
   position: relative;
 
@@ -320,12 +325,20 @@ header {
 
 // animation circle
 
+.animation-wrapper {
+  position: relative;
+  z-index: 0;
+  height: 20vh;
+  overflow: hidden;
+  @include light();
+}
+
 // animation circle
 .animation-circle {
   z-index: 0;
   position: absolute;
   right: -8%;
-  top: -10%;
+  top: -35%;
   width: 300px;
   height: 300px;
   object-fit: contain;
@@ -338,6 +351,7 @@ header {
   @include f-row();
   .same-wrapper {
     width: 50%;
+
     h3 {
       font-family: $ws;
       @include text(2rem, 400);
