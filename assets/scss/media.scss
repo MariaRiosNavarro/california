@@ -8,6 +8,31 @@
     background-color: $w;
   }
 
+  //!description
+
+  .description {
+    h2 {
+      @include text(7rem, 700);
+    }
+  }
+
+  //   !damages
+
+  .damages {
+    img {
+      width: 40%;
+      object-fit: contain;
+    }
+    .damages-list {
+      padding-top: 5rem;
+      li {
+        h2 {
+          @include text(5rem, 700);
+        }
+      }
+    }
+  }
+
   // !animations
 
   .animation-circle {
@@ -26,21 +51,39 @@
     display: none;
   }
 
-  //   !bear
+  //   !bears
+
+  .same-wrapper {
+    h3 {
+      @include text(1.5rem, 400);
+    }
+    h2 {
+      @include text(4rem, 700);
+    }
+  }
+
+  .same-text {
+    p {
+      @include text(2rem, 700);
+    }
+    h3 {
+      @include text(1.5rem, 400);
+    }
+  }
 
   .golden-bear {
     .img-wrapper {
       padding-top: 16rem;
       top: 0;
     }
+  }
 
-    // ! footer message
+  // ! footer message
 
-    .footer-message {
-      p {
-        width: 100%;
-        background-color: red;
-      }
+  .footer-message {
+    p {
+      width: 100%;
+      padding-bottom: 20rem;
     }
   }
 }

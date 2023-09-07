@@ -312,6 +312,7 @@ header nav {
 .same-header {
   display: flex;
   align-items: center;
+  gap: 3rem;
 }
 .same-header .same-wrapper {
   width: 50%;
@@ -466,6 +467,21 @@ header nav {
   body {
     background-color: #efeaea;
   }
+  .description h2 {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+  .damages img {
+    width: 40%;
+    object-fit: contain;
+  }
+  .damages .damages-list {
+    padding-top: 5rem;
+  }
+  .damages .damages-list li h2 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
   .animation-circle {
     top: 0;
     right: 35%;
@@ -479,13 +495,29 @@ header nav {
   .triangle {
     display: none;
   }
+  .same-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .same-wrapper h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .same-text p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .same-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
   .golden-bear .img-wrapper {
     padding-top: 16rem;
     top: 0;
   }
-  .golden-bear .footer-message p {
+  .footer-message p {
     width: 100%;
-    background-color: red;
+    padding-bottom: 20rem;
   }
 }
 @media screen and (max-width: 767px) {
