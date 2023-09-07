@@ -43,6 +43,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 // ! general classes
@@ -75,7 +76,6 @@ header,
 .description,
 .damages,
 .golden-bear,
-.message,
 footer {
   @include dark();
   width: 100%;
@@ -386,9 +386,95 @@ header {
   }
 }
 
-// # section message
-
 // ! ---------------footer sozial-media
+
+.footer-message {
+  padding-bottom: 8.5rem;
+  h3 {
+    font-family: $ws;
+    @include text(1.2rem, 400);
+  }
+  p {
+    font-family: $inter;
+    @include text(2.4rem, 700);
+    line-height: 46.083px;
+    padding: 2.3rem 0;
+    width: 50%;
+  }
+}
+
+.sz-links {
+  ul {
+    @include f-row();
+    li {
+      padding-right: 1rem;
+      img {
+        width: 1.4rem;
+        aspect-ratio: 1;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  width: 100%;
+  @include f-row;
+  justify-content: space-between;
+  .f-text {
+    p {
+      font-family: $ws;
+      @include text(1.2rem, 400);
+      padding-top: 1.2rem;
+    }
+  }
+
+  .f-logos {
+    @include f-row;
+    padding-right: 20rem;
+    img {
+      width: 5rem;
+    }
+  }
+}
+
+// banner animation
+
+.footer {
+  position: relative;
+
+  .animation-stripe {
+    position: absolute;
+    top: 100%;
+    rotate: 45deg;
+    width: 200%;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    animation: move 4s infinite linear;
+    animation-direction: alternate;
+    background-color: $w;
+
+    p {
+      color: #000;
+      @include text(10rem, 700);
+      font-family: $inter;
+      line-height: 82.292px;
+      text-transform: uppercase;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      overflow: hidden;
+
+      span {
+        overflow: hidden;
+        color: $w;
+        text-shadow: 1px 1px 0 $b, -1px -1px 0 $b, 1px -1px 0 $b, -1px 1px 0 $b,
+          1px 1px 0 $b;
+      }
+    }
+  }
+}
+
+//  - Animation
 
 // keyframes
 
@@ -400,5 +486,16 @@ header {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+// banner
+
+@keyframes move {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-10%);
   }
 }

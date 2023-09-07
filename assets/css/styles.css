@@ -30,6 +30,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .btn, button {
@@ -54,7 +55,6 @@ header,
 .description,
 .damages,
 .golden-bear,
-.message,
 footer {
   background-color: rgb(29, 27, 27);
   color: #efeaea;
@@ -351,12 +351,102 @@ header nav {
   letter-spacing: -0.408px;
 }
 
+.footer-message {
+  padding-bottom: 8.5rem;
+}
+.footer-message h3 {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-message p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 46.083px;
+  padding: 2.3rem 0;
+  width: 50%;
+}
+
+.sz-links ul {
+  display: flex;
+  align-items: center;
+}
+.sz-links ul li {
+  padding-right: 1rem;
+}
+.sz-links ul li img {
+  width: 1.4rem;
+  aspect-ratio: 1;
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-wrapper .f-text p {
+  font-family: WS, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-top: 1.2rem;
+}
+.footer-wrapper .f-logos {
+  display: flex;
+  align-items: center;
+  padding-right: 20rem;
+}
+.footer-wrapper .f-logos img {
+  width: 5rem;
+}
+
+.footer {
+  position: relative;
+}
+.footer .animation-stripe {
+  position: absolute;
+  top: 100%;
+  rotate: 45deg;
+  width: 200%;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  animation: move 4s infinite linear;
+  animation-direction: alternate;
+  background-color: #efeaea;
+}
+.footer .animation-stripe p {
+  color: #000;
+  font-size: 10rem;
+  font-weight: 700;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 82.292px;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  overflow: hidden;
+}
+.footer .animation-stripe p span {
+  overflow: hidden;
+  color: #efeaea;
+  text-shadow: 1px 1px 0 rgb(29, 27, 27), -1px -1px 0 rgb(29, 27, 27), 1px -1px 0 rgb(29, 27, 27), -1px 1px 0 rgb(29, 27, 27), 1px 1px 0 rgb(29, 27, 27);
+}
+
 @keyframes rotateAnimation {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-10%);
   }
 }
 
