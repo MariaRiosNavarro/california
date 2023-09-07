@@ -235,9 +235,14 @@ header nav {
 .bears {
   overflow: visible;
   width: 100%;
-  z-index: 10;
   margin: 0;
   padding: 10rem;
+}
+
+.golden-bear,
+.poppy-bear {
+  padding-top: 16rem;
+  height: 1212px;
 }
 
 .img-wrapper {
@@ -267,6 +272,10 @@ header nav {
   right: 5%;
 }
 
+.poppy-bear {
+  z-index: 10;
+  position: relative;
+}
 .poppy-bear .img-wrapper {
   justify-content: flex-end;
 }
@@ -274,22 +283,15 @@ header nav {
   left: 5%;
 }
 
-.poppy-bear {
-  z-index: 10;
-  position: relative;
-}
-.poppy-bear .animation-circle {
+.animation-circle {
+  z-index: 0;
   position: absolute;
   right: -8%;
   top: -10%;
-  width: 25%;
-  z-index: 0;
-}
-
-.golden-bear,
-.poppy-bear {
-  padding-top: 16rem;
-  height: 1212px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  animation: rotateAnimation 5s infinite linear;
 }
 
 .same-header {
@@ -326,6 +328,15 @@ header nav {
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: -0.408px;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

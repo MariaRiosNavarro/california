@@ -257,9 +257,16 @@ header {
 .bears {
   overflow: visible;
   width: 100%;
-  z-index: 10;
   margin: 0;
   padding: 10rem;
+}
+
+// 2 bears
+
+.golden-bear,
+.poppy-bear {
+  padding-top: 16rem;
+  height: 1212px;
 }
 
 // img position
@@ -268,6 +275,7 @@ header {
   position: relative;
   width: 100%;
   @include f-row();
+
   .big-img {
     width: 70%;
     object-fit: cover;
@@ -280,17 +288,25 @@ header {
   }
 }
 
+// .golden-bear
+
 .golden-bear {
   z-index: 20;
+
   .img-wrapper {
     justify-content: flex-start;
+
     .sm-img {
       right: 5%;
     }
   }
 }
 
+// .poppy-bear
+
 .poppy-bear {
+  z-index: 10;
+  position: relative;
   .img-wrapper {
     justify-content: flex-end;
     .sm-img {
@@ -299,22 +315,18 @@ header {
   }
 }
 
-.poppy-bear {
-  z-index: 10;
-  position: relative;
-  .animation-circle {
-    position: absolute;
-    right: -8%;
-    top: -10%;
-    width: 25%;
-    z-index: 0;
-  }
-}
+// animation circle
 
-.golden-bear,
-.poppy-bear {
-  padding-top: 16rem;
-  height: 1212px;
+// animation circle
+.animation-circle {
+  z-index: 0;
+  position: absolute;
+  right: -8%;
+  top: -10%;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  animation: rotateAnimation 5s infinite linear;
 }
 
 // text styles
@@ -355,3 +367,16 @@ header {
 // # section message
 
 // ! ---------------footer sozial-media
+
+// keyframes
+
+// rotate animation
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
