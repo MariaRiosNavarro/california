@@ -30,7 +30,6 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  z-index: 10;
 }
 
 .btn, button {
@@ -399,26 +398,33 @@ header nav {
 }
 .footer-wrapper .f-logos img {
   width: 5rem;
+  padding-right: 1rem;
 }
 
 .footer {
   position: relative;
+  height: 600px;
+  z-index: 8;
 }
-.footer .animation-stripe {
-  position: absolute;
-  top: 100%;
-  rotate: 45deg;
-  width: 200%;
-  text-align: center;
-  height: auto;
+
+.animation-stripe {
   overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  rotate: 45deg;
+  height: auto;
+  text-align: center;
   animation: move 4s infinite linear;
   animation-direction: alternate;
+  background: url("../img/line.svg") no-repeat center;
+  background-size: contain;
   background-color: #efeaea;
 }
-.footer .animation-stripe p {
-  color: #000;
-  font-size: 10rem;
+.animation-stripe p {
+  color: rgb(29, 27, 27);
+  font-size: 9rem;
   font-weight: 700;
   font-family: Inter, Arial, Helvetica, sans-serif;
   line-height: 82.292px;
@@ -426,11 +432,13 @@ header nav {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   overflow: hidden;
+  z-index: 0;
 }
-.footer .animation-stripe p span {
+.animation-stripe p span {
   overflow: hidden;
+  z-index: 0;
   color: #efeaea;
-  text-shadow: 1px 1px 0 rgb(29, 27, 27), -1px -1px 0 rgb(29, 27, 27), 1px -1px 0 rgb(29, 27, 27), -1px 1px 0 rgb(29, 27, 27), 1px 1px 0 rgb(29, 27, 27);
+  text-shadow: 2px 2px 0 rgb(29, 27, 27), -2px -2px 0 rgb(29, 27, 27), 2px -2px 0 rgb(29, 27, 27), -2px 2px 0 rgb(29, 27, 27), 2px 2px 0 rgb(29, 27, 27);
 }
 
 @keyframes rotateAnimation {
@@ -443,10 +451,10 @@ header nav {
 }
 @keyframes move {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(10%);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(40%);
   }
 }
 

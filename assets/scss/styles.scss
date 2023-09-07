@@ -43,7 +43,6 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  z-index: 10;
 }
 
 // ! general classes
@@ -433,6 +432,7 @@ header {
     padding-right: 20rem;
     img {
       width: 5rem;
+      padding-right: 1rem;
     }
   }
 }
@@ -441,35 +441,43 @@ header {
 
 .footer {
   position: relative;
+  height: 600px;
+  z-index: 8;
+}
 
-  .animation-stripe {
-    position: absolute;
-    top: 100%;
-    rotate: 45deg;
-    width: 200%;
-    text-align: center;
-    height: auto;
+.animation-stripe {
+  overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  rotate: 45deg;
+  height: auto;
+  text-align: center;
+
+  animation: move 4s infinite linear;
+  animation-direction: alternate;
+  background: url("../img/line.svg") no-repeat center;
+  background-size: contain;
+  background-color: $w;
+
+  p {
+    color: $b;
+    @include text(9rem, 700);
+    font-family: $inter;
+    line-height: 82.292px;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     overflow: hidden;
-    animation: move 4s infinite linear;
-    animation-direction: alternate;
-    background-color: $w;
+    z-index: 0;
 
-    p {
-      color: #000;
-      @include text(10rem, 700);
-      font-family: $inter;
-      line-height: 82.292px;
-      text-transform: uppercase;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+    span {
       overflow: hidden;
-
-      span {
-        overflow: hidden;
-        color: $w;
-        text-shadow: 1px 1px 0 $b, -1px -1px 0 $b, 1px -1px 0 $b, -1px 1px 0 $b,
-          1px 1px 0 $b;
-      }
+      z-index: 0;
+      color: $w;
+      text-shadow: 2px 2px 0 $b, -2px -2px 0 $b, 2px -2px 0 $b, -2px 2px 0 $b,
+        2px 2px 0 $b;
     }
   }
 }
@@ -493,9 +501,9 @@ header {
 
 @keyframes move {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(10%);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(40%);
   }
 }
