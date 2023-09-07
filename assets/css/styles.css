@@ -380,7 +380,7 @@ header nav {
 }
 
 .footer-wrapper {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -403,42 +403,46 @@ header nav {
 
 .footer {
   position: relative;
-  height: 600px;
-  z-index: 8;
 }
 
 .animation-stripe {
+  width: 100%;
+  top: 12.8rem;
+  left: 24.5rem;
+  position: relative;
+  transform: rotate(45deg);
   overflow: hidden;
   z-index: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  rotate: 45deg;
-  height: auto;
-  text-align: center;
-  animation: move 4s infinite linear;
-  animation-direction: alternate;
-  background: url("../img/line.svg") no-repeat center;
-  background-size: contain;
   background-color: #efeaea;
 }
-.animation-stripe p {
+.animation-stripe div {
+  white-space: nowrap;
   color: rgb(29, 27, 27);
-  font-size: 9rem;
+  display: inline-block;
+  font-size: 8rem;
   font-weight: 700;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  line-height: 82.292px;
   text-transform: uppercase;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   overflow: hidden;
-  z-index: 0;
+  animation: move 8s infinite linear;
+  animation-direction: alternate;
 }
-.animation-stripe p span {
+.animation-stripe div span {
   overflow: hidden;
   z-index: 0;
   color: #efeaea;
   text-shadow: 2px 2px 0 rgb(29, 27, 27), -2px -2px 0 rgb(29, 27, 27), 2px -2px 0 rgb(29, 27, 27), -2px 2px 0 rgb(29, 27, 27), 2px 2px 0 rgb(29, 27, 27);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 7rem solid #efeaea;
+  border-top: 7rem solid transparent;
+  border-left: 7rem solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @keyframes rotateAnimation {
@@ -451,10 +455,10 @@ header nav {
 }
 @keyframes move {
   0% {
-    transform: translateX(10%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(40%);
+    transform: translateX(0%);
   }
 }
 
