@@ -1,5 +1,5 @@
 @media screen and (min-width: 767px) and (max-width: 1440px) {
-  body {
+  .wrapper {
     background-color: #efeaea;
   }
   .description h2 {
@@ -56,7 +56,7 @@
   }
 }
 @media screen and (max-width: 767px) {
-  body {
+  .wrapper {
     background-color: #efeaea;
     width: 100vw;
   }
