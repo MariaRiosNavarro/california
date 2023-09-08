@@ -26,12 +26,11 @@ a {
   text-decoration: none;
 }
 
-body {
+.wrapper {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #efeaea;
-
+  background-color: rgb(29, 27, 27);
 }
 
 .btn, button {
